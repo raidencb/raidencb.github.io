@@ -1,7 +1,7 @@
 import { groupBy } from "lodash-es"
 import people from "./people"
 
-import './style.css'
+import './style.css';
 
 const managerGroups = groupBy(people, "manager")
 
