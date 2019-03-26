@@ -1,6 +1,8 @@
 import { groupBy } from "lodash-es"
 import people from "./people"
 
+import './style.css'
+
 const managerGroups = groupBy(people, "manager")
 
 const root = document.createElement("div")
