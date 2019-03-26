@@ -1,7 +1,6 @@
 {
   "name": "raidencb.github.io",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "develop": "webpack --mode development --watch",
@@ -23,5 +22,6 @@
     "html-webpack-plugin": "^3.2.0",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0"
-  }
+  },
+  "description": ""
 }
