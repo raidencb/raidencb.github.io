@@ -1,4 +1,5 @@
 const path = require('path')
+const webpack = require('webpack')
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -8,11 +9,17 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
+   devServer: {
+    hot: true
+   },
+   plugins: [
+     new webpack.HotModuleReplacementPlugin()
+   ],
   plugins: [
-    new CleanWebpackPlugin(),
-    new HtmlWebpackPlugin({
-      title: 'Rest API'
-    })
+        new CleanWebpackPlugin(),
+        new HtmlWebpackPlugin({
+        title: 'Callbox Rest'
+      })
   ],
   module: {
     rules: [
